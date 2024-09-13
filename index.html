@@ -12,6 +12,75 @@
     />
   </head>
   <body>
+    <div class="container mt-5">
+      <h1>Formulario de Información</h1>
+      <form>
+        <div class="mb-3">
+          <label for="nombreCompleto" class="form-label">Nombre completo</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombreCompleto"
+            placeholder="Ingrese su nombre completo"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="edad" class="form-label">Edad</label>
+          <input
+            type="number"
+            class="form-control"
+            id="edad"
+            placeholder="Ingrese su edad"
+            min="0"
+            required
+          />
+        </div>
+
+        <fieldset class="mb-3">
+          <label for="sexo" class="form-label">sexo</label>
+          <div>
+            <input
+              type="radio"
+              id="masculino"
+              name="drone"
+              value="Masculino"
+              checked
+            />
+            <label for="masculino" class="form-label">Masculino</label>
+          </div>
+
+          <div>
+            <input type="radio" id="femenino" name="drone" value="Femenino" />
+            <label for="femenino" class="form-label">Femenino</label>
+          </div>
+        </fieldset>
+
+        <div class="mb-3">
+          <label for="fechaNacimiento" class="form-label"
+            >Fecha de nacimiento</label
+          >
+          <input
+            type="date"
+            class="form-control"
+            id="fechaNacimiento"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input
+            type="email"
+            class="form-control"
+            id="correo"
+            placeholder="Ingrese su correo electrónico"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+
     <!-- DEPENDENCIES -->
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
